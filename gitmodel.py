@@ -2,7 +2,7 @@ from yhat import Yhat, YhatModel , preprocess
 import os
 USERNAME = os.environ["USERNAME"]
 APIKEY = os.environ["APIKEY"]
-URL = os.environ["PROD_URL"]
+URL = os.environ["URL"]
 
 class HelloWorld(YhatModel):
     @preprocess(in_type=dict, out_type=dict)
